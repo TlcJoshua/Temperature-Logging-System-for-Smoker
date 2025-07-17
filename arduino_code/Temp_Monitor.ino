@@ -1,5 +1,5 @@
 // This example reads temperature from a MAX6675 thermocouple and logs the data
-// to a file on an SD card every 30 seconds with a timestamp from a DS3231 RTC.
+// to a file on an SD card every 5 seconds with a timestamp from a DS3231 RTC.
 
 #include <SPI.h>
 #include <SD.h>
@@ -128,6 +128,6 @@ void loop() {
     Serial.println("Error opening datalog.txt");
   }
   
-  // Wait for 30 seconds before the next reading
-  delay(30000);
+  // Wait for 5 seconds before the next reading
+  delay(5000);
 }
